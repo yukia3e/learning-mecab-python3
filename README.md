@@ -1,0 +1,1 @@
+# Learning mecab-python3
