@@ -33,11 +33,14 @@ while node:
 	# prob: 周辺確率
 	# wcost: 単語生起コスト
 	# cost: BOSノードからこのノードまでの最高の累積コスト
+	#
+	# 生起コストの概念
+	# http://www.mwsoft.jp/programming/munou/mecab_nitteretou.html
 	word = node.surface
 	stat = node.stat
-	cost = node.cost
 	wcost = node.wcost
-	nodes.append([word, stat, cost, wcost])
+	cost = node.cost
+	nodes.append([word, stat, wcost, cost])
 	node = node.next
 
 print(nodes)

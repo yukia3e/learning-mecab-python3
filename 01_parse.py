@@ -15,6 +15,9 @@ wakati = MeCab.Tagger("-Odump")
 print(wakati.parse(text))
 
 # custom
+# formatの参考ページ
+# https://taku910.github.io/mecab/format.html
+#
 # optionの参考ページ
 # http://www.mwsoft.jp/programming/munou/mecab_command.html
 wakati = MeCab.Tagger("-F '%m\t%H\t%pw,%pC,%pc\n' -U '%m\t%H\t%pw,%pC,%pc\n'")
